@@ -1,0 +1,229 @@
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+.container {
+  flex: 1;
+}
+
+/* NAvbar */
+.navbar {
+  height: 5rem !important;
+  background-color: white;
+}
+.fa-compass {
+  color: #fe424d;
+  font-size: 2rem !important;
+}
+.nav-link {
+  color: #222222 !important;
+  font-size: 1.4rem !important;
+}
+
+/* Footer */
+footer {
+  position: sticky;
+}
+.f-info-links a {
+  color: #222222;
+  text-decoration: none;
+}
+.f-info-links a :hover {
+  text-decoration: underline;
+}
+.f-info-links,
+.f-info-socials,
+.f-info-brands {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.f-info-socials i {
+  font-size: 1.2rem;
+  margin-right: 1.2rem;
+}
+.f-info {
+  display: flex !important;
+  height: 7rem;
+  background-color: #ebebeb;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: space-evenly;
+  text-align: center;
+}
+
+/* Cards Styles */
+.listing-card {
+  border: none !important;
+  margin-bottom: 2rem;
+}
+.card-img-top {
+  border-radius: 1rem !important;
+  width: 100% !important;
+  object-fit: cover !important;
+}
+.card-body {
+  padding: 0% !important;
+}
+.card-text p {
+  font-weight: 400 !important;
+}
+.listing-link {
+  text-decoration: none !important;
+}
+.card-img-overlay {
+  opacity: 0;
+}
+.card-img-overlay:hover {
+  opacity: 0.5;
+  background-color: white;
+}
+
+/* Edit.ejs */
+.btn-edit {
+  background-color: #fe424d !important;
+  border: none !important;
+}
+
+/* Show Page.... */
+
+.show-img {
+  height: 40vh;
+  width: 30vh;
+}
+
+.btns {
+  display: flex;
+}
+/* 
+map */
+#map {
+  width: 600px;
+  height: 60vh;
+}
+/* 
+navbar ejs */
+/* Styles for the search input container */
+.search-container {
+  display: flex;
+  align-items: center;
+  margin: 20px;
+  /* Adjust margin as needed */
+}
+
+/* Styles for the search input */
+.search-input {
+  flex: 1;
+  padding: 10px;
+  border: 2px solid #ddd;
+  border-radius: 20px;
+  /* Adjust to create an oval shape */
+  font-size: 16px;
+  margin-right: 10px;
+  /* Add space between input and button */
+}
+
+/* Styles for the search button */
+.search-button {
+  background-color: #fe424d;
+  /* Red color */
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 20px;
+  /* Adjust to match the search input */
+  cursor: pointer;
+  font-size: 16px;
+  position: relative;
+  transition: background-color 0.3s;
+  /* Add a smooth transition effect */
+}
+
+/* Styles for the magnifying glass icon inside the search button */
+.search-button i {
+  margin-right: 5px;
+  /* Add a small space to the right of the icon */
+}
+
+/* Hover effect for the search button */
+.search-button:hover {
+  background-color: #e0333d;
+  /* Darker red on hover */
+}
+/* 
+  index ejs */
+#filters {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.filter {
+  text-align: center;
+  margin-right: 2rem;
+  margin-top: 2rem;
+  opacity: 0.7;
+}
+
+.filter:hover {
+  opacity: 1;
+  cursor: pointer;
+}
+
+.filter p {
+  font-size: 0.7rem;
+}
+
+.tax-info {
+  display: none;
+}
+
+/* .tax-toggle {
+      display: flex;
+      align-items: center;
+      border: 1px solid black;
+      border-radius: 1rem;
+      height: 3rem;
+      padding: 1rem;
+      margin-left: 7rem;
+
+    } */
+.tax-toggle {
+  display: flex;
+  align-items: center;
+  border: 1px solid #ddd;
+  /* Change border color */
+  border-radius: 1rem;
+  height: 3rem;
+  padding: 1rem;
+  margin-left: 4rem;
+  background-color: #fff;
+  /* Set background color */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  /* Add a subtle box shadow */
+}
+
+.form-check-rverse {
+  display: inline-block;
+  position: relative;
+}
+
+.form-check-input {
+  width: 40px;
+  height: 20px;
+  margin: 0;
+  padding: 0;
+  position: absolute;
+
+  /* Hide the actual checkbox */
+  cursor: pointer;
+}
+
+.form-check-label {
+  margin-left: 10px;
+  cursor: pointer;
+}
